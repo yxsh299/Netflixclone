@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+}
+
+button {
+  background: none;
+  border: none;
+  width: 2rem;
+  -webkit-transition: ease all .2s;
+  transition: ease all .2s;
+  opacity: .5;
+}
+
+button:hover {
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: ease-in-out all .2s;
+  transition: ease-in-out all .2s;
+}
+
+button i {
+  font-size: 30px;
+  color: #fff;
+}
+
+button i:hover {
+  color: #fff;
+}
+
+.video-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.bottom__video-control {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  padding-top: 5rem;
+  -webkit-transition: opacity .6s;
+  transition: opacity .6s;
+}
+
+.progress-bar {
+  height: 8px;
+  width: 98%;
+  margin: 0 auto;
+  background: #5B5B5B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.progress-bar .watched-time {
+  background: red;
+  height: 8px;
+}
+
+.progress-bar .circle {
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  margin-left: -1px;
+  border-radius: 50px;
+}
+
+.left {
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  float: left;
+  height: 100%;
+}
+
+.left button {
+  margin: auto 25px;
+}
+
+.left .video-title {
+  color: #fff;
+  font-size: 24px;
+  margin: auto 25px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+}
+
+.right {
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  float: right;
+  height: 100%;
+}
+
+.right button {
+  margin: auto 20px;
+  right: 0;
+}
+
+.play-pause .pause {
+  font-size: 28px;
+}
+
+.play-pause .pause,
+.volume .muted,
+.screen-size .minimized {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
